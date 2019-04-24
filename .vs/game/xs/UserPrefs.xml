@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/playerCollision.cs">
+    <Files>
+      <File FileName="Assets/playerMovement.cs" Line="22" Column="25" />
+      <File FileName="Assets/floowPlayder.cs" Line="22" Column="1" />
+      <File FileName="Assets/playerCollision.cs" Line="7" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
