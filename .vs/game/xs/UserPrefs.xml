@@ -1,12 +1,14 @@
 ﻿<Properties StartupConfiguration="{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/rotate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/iconDisplay.cs">
     <Files>
-      <File FileName="Assets/script/playerMovement.cs" Line="22" Column="63" />
+      <File FileName="Assets/script/playerMovement.cs" Line="45" Column="32" />
       <File FileName="Assets/script/floowPlayder.cs" Line="22" Column="1" />
       <File FileName="Assets/script/playerCollision.cs" Line="14" Column="10" />
       <File FileName="Assets/eatCoin.cs" Line="16" Column="18" />
       <File FileName="Assets/script/eatIcon.cs" Line="11" Column="9" />
-      <File FileName="Assets/script/rotate.cs" Line="10" Column="25" />
+      <File FileName="Assets/script/rotate.cs" Line="14" Column="5" />
+      <File FileName="Assets/script/ScoreDisplay.cs" Line="14" Column="27" />
+      <File FileName="Assets/script/iconDisplay.cs" Line="4" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

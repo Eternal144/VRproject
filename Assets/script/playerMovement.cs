@@ -6,9 +6,11 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     public Rigidbody rb;
+    public Text countText;
     public float forwardSpeed = 2000f;
     public float sidewayForce = 500f;
     private int count;
+
 
     // Start is called before the first frame update
 
@@ -16,6 +18,7 @@ public class playerMovement : MonoBehaviour
     private void Start()
     {
         count = 0;
+        setCountText();
     }
     void FixedUpdate()
     {
@@ -34,6 +37,11 @@ public class playerMovement : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             count++;
+            setCountText();
         }
+    }
+    void setCountText()
+    {
+        countText.text = "golds：" + count.ToString();
     }
 }
