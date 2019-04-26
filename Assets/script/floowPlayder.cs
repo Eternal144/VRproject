@@ -18,3 +18,5 @@ public class floowPlayder : MonoBehaviour
         transform.position = offset + player.position;
     }
 }
+
+

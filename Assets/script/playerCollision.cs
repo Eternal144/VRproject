@@ -1,16 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class playerCollision : MonoBehaviour
 {
-    public playerMovement movement;
 
-    public void OnCollisionEnter(Collision collision)
-    {
-        if(collision.collider.tag == "obstacle")
-        {
-            movement.enabled = false; 
-        }
-    }
+
+
+
 }

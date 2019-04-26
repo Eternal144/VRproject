@@ -10,7 +10,9 @@ public class playerMovement : MonoBehaviour
     public float forwardSpeed = 2000f;
     public float sidewayForce = 500f;
     private int count;
-
+    bool isJump = false;
+    public float jumpForce = 250f;
+    public playerMovement movement;
 
     // Start is called before the first frame update
 
@@ -20,17 +22,29 @@ public class playerMovement : MonoBehaviour
         count = 0;
         setCountText();
     }
-    void FixedUpdate()
+
+    void Update()
     {
         rb.AddForce(0, 0, forwardSpeed * Time.deltaTime);
-        if (Input.GetKey("d")) 
+        if (Input.anyKeyDown || Input.anyKey)
         {
-            rb.AddForce(sidewayForce * Time.deltaTime, 0, 0);
-        }else if (Input.GetKey("a"))
-        {
-            rb.AddForce(-sidewayForce * Time.deltaTime, 0, 0);
+ 
+            if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow))
+            {
+                rb.AddForce(2000 * Time.deltaTime, 0, 0);
+            }
+            else if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow))
+            {
+                rb.AddForce(-sidewayForce * Time.deltaTime, 0, 0);
+            }
+            else if (Input.GetKey(KeyCode.Space) && !isJump)
+            {
+                rb.AddForce(Vector3.up * jumpForce);
+                isJump = true;
+            }
         }
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("icon"))
@@ -40,8 +54,25 @@ public class playerMovement : MonoBehaviour
             setCountText();
         }
     }
+
+
     void setCountText()
     {
         countText.text = "golds：" + count.ToString();
     }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag == "obstacle")
+        {
+            movement.enabled = false;
+            rb.name = "over";
+
+        }
+        if (collision.collider.tag == "plane")
+        {
+            isJump = false;
+        }
+    }
+
 }
