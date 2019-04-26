@@ -31,7 +31,7 @@ public class playerMovement : MonoBehaviour
  
             if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow))
             {
-                rb.AddForce(2000 * Time.deltaTime, 0, 0);
+                rb.AddForce(sidewayForce * Time.deltaTime, 0, 0);
             }
             else if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow))
             {
@@ -43,6 +43,7 @@ public class playerMovement : MonoBehaviour
                 isJump = true;
             }
         }
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -67,7 +68,6 @@ public class playerMovement : MonoBehaviour
         {
             movement.enabled = false;
             rb.name = "over";
-
         }
         if (collision.collider.tag == "plane")
         {

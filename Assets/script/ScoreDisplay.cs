@@ -11,12 +11,16 @@ public class ScoreDisplay : MonoBehaviour
     public Text overNofify;
     public Text overText;
     private double finalScore;
+    public Button startButton;
+    public Button quitButton;
 
 
     private void Start()
     {
         overNofify.gameObject.SetActive(false);
         overText.gameObject.SetActive(false);
+        startButton.gameObject.SetActive(false);
+        quitButton.gameObject.SetActive(false);
     }
     // Update is called once per frame
     void Update()
@@ -27,7 +31,8 @@ public class ScoreDisplay : MonoBehaviour
             Scoretext.text = "scores:" + finalScore.ToString("0");
             overNofify.gameObject.SetActive(true);
             overText.gameObject.SetActive(true);
-            Debug.Log("i am here ");
+            startButton.gameObject.SetActive(true);
+            quitButton.gameObject.SetActive(true);
             overNofify.text = "Game Over!";
             overText.text = "您的得分：" +  finalScore.ToString("0");
         }
@@ -37,10 +42,6 @@ public class ScoreDisplay : MonoBehaviour
             Scoretext.text = "scores:" + finalScore.ToString("0");
 
         }
-
-    }
-    private void FixedUpdate()
-    {
 
     }
 

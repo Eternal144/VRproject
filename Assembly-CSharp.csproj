@@ -60,14 +60,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\aaa.cs" />
     <Compile Include="Assets\script\collection.cs" />
     <Compile Include="Assets\script\floowPlayder.cs" />
     <Compile Include="Assets\script\iconDisplay.cs" />
     <Compile Include="Assets\script\playerCollision.cs" />
     <Compile Include="Assets\script\playerMovement.cs" />
+    <Compile Include="Assets\script\QuitButton.cs" />
     <Compile Include="Assets\script\rotate.cs" />
     <Compile Include="Assets\script\ScoreDisplay.cs" />
-    <Compile Include="Assets\script\TestButton.cs" />
+    <Compile Include="Assets\script\StartButton.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/sisilee/Projects/unity/game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

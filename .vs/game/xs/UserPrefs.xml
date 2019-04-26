@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{1AF7E356-2D58-7119-FE6C-C1ED31A62E64}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/script/playerMovement.cs">
     <Files>
-      <File FileName="Assets/script/playerMovement.cs" Line="67" Column="28" />
-      <File FileName="Assets/script/ScoreDisplay.cs" Line="40" Column="1" />
-      <File FileName="Assets/script/iconDisplay.cs" Line="8" Column="1" />
+      <File FileName="Assets/script/playerMovement.cs" Line="34" Column="17" />
+      <File FileName="Assets/script/ScoreDisplay.cs" Line="29" Column="31" />
+      <File FileName="Assets/script/StartButton.cs" Line="7" Column="2" />
+      <File FileName="Assets/script/QuitButton.cs" Line="8" Column="5" />
+      <File FileName="Assets/script/playerCollision.cs" Line="9" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
